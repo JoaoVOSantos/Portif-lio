@@ -16,8 +16,8 @@
     --Cor-Texto: #0d0d0d;
 
     /* Tipografia */
-    --Tipo-Texto-1: 'Roboto', sans-serif;
-    --Tipo-Texto-2: 'Rubik', sans-serif;
+    --Tipo-Texto-Titulo: 'Roboto', sans-serif;
+    --Tipo-Texto-Paragrafo: 'Rubik', sans-serif;
 
     /* Cor Contraste pra --Cor-Texto e --Cor-Titulo */
     --Cor-Fundo-E-Contraste-Com-Titulo: #f2f2f2;
@@ -42,7 +42,7 @@ body{
     height: 100px;
     padding-left: 30px;
     color: var(--Cor-Texto);
-    font-family: var(--Tipo-Texto-2);
+    font-family: var(--Tipo-Texto-Titulo);
     font-size: 1.05rem;
 }
 
@@ -50,7 +50,7 @@ body{
     display: flex;
     justify-content: center;
     width: 80%;
-    font-family: var(--Tipo-Texto-2);
+    font-family: var(--Tipo-Texto-Paragrafo);
     font-size: 1rem;
     font-weight: 400;
 }
@@ -59,13 +59,28 @@ body{
     display: flex;
     flex-direction: row;
     gap: 30px;
+    padding-right:10px;
 }
 .list ul li a{
     color: var(--Cor-Texto);
 }
 
+.list ul li:hover{
+    transition: 500ms;
+    font-size: 1.2rem;
+    text-decoration: 2px solid var(--cor-fundo);
+    border: 1px var(--Cor-Fundo-E-Contraste-Com-Titulo) solid;
+}
+
+/* pesquisado not(hover) */
+.list ul li:not(:hover){
+    transition: 500ms;
+    font-size: 1rem;
+    border: 1px var(--Cor-Fundo-E-Contraste-Com-Titulo) solid;
+}
+
 .name{
-    font-family: var(--Tipo-Texto-2);
+    font-family: var(--Tipo-Texto-Titulo);
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -87,13 +102,13 @@ main{
     height: auto;
 }
 .container-main h1{
-    font-family: var(--Tipo-Texto-1);
+    font-family: var(--Tipo-Texto-Titulo);
     margin-bottom: 5px;
 }
 .container-main p{
     margin-top: 5px;
     margin-bottom: 5px;
-    font-family: var(--Tipo-Texto-2);
+    font-family: var(--Tipo-Texto-Paragrafo);
 }
 .container-main .text{
     margin-left: 15%;
@@ -118,6 +133,7 @@ main{
     height: 75px;
     width: 75px;
 }
+
 /* Contatos */
 .redes{
     display: flex;
@@ -130,6 +146,19 @@ main{
     width: 100px;
     height: 100px;
 }
+
+.redes img:hover{
+    transition: 500ms;
+    height: 150px;
+    width: 150px;
+}
+
+.redes img:not(:hover){
+    transition: 500ms;
+    height: 100px;
+    width: 100px;
+}
+
 
 /* Sobre */
 .Separator{
@@ -168,9 +197,36 @@ main{
     width: 20%;
     margin-right: 20px;
     border-radius: 0px 10px 0px 10px;
+    justify-content: center;
+    
+}
+.container-picture p{
+    font-family: var(--Tipo-Texto-Paragrafo);
+    font-size: 1rem;
+    margin-top: 5px;
+    text-align: left;
+    width: 90%;
+    margin-left: 15px;
+    justify-content: center;
+}
+
+.picture{
+    display: flex;
+    justify-content: center;
 }
 
 .container-picture img{
+    border: 5px solid var(--Cor-Fundo) ;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.container-projects{
+    border-radius: 5px;
+    background-color: var(--Cor-Fundo);
+    width: 90%;
+    height: 10%;
     
 }
 
