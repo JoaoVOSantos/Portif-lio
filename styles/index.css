@@ -209,6 +209,18 @@ main{
     margin-left: 15px;
     justify-content: center;
 }
+.container-picture .container-reverse{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+    width: auto;
+    text-align: left;
+}
+.container-picture .container-reverse h6{
+    font-family: var(--Tipo-Texto-Paragrafo);
+    font-size: 0.70rem;
+}
+
 
 .picture{
     display: flex;
