@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+/* Resetando Valores */
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@
     list-style: none;
 }
 
+/* Variaveis Globais */
 :root{
     /* Cores */
     --Cor-Texto: #0d0d0d;
@@ -28,7 +30,7 @@
 
     
 }
-/* Index */
+/*------------------- Pagina Index -------------------------- */
 body{
     background-color: var(--Cor-Fundo);
  }
@@ -59,7 +61,7 @@ body{
     display: flex;
     flex-direction: row;
     gap: 30px;
-    padding-right:10px;
+    padding-right: 10px;
 }
 .list ul li a{
     color: var(--Cor-Texto);
@@ -99,7 +101,7 @@ main{
     display: flex;
     flex-direction: column;
     background-color: var(--Cor-Fundo-E-Contraste-Com-Titulo);
-    height: auto;
+    height: max-content;
 }
 .container-main h1{
     font-family: var(--Tipo-Texto-Titulo);
@@ -118,23 +120,20 @@ main{
     text-align: left;
     margin-top: 10px;
 }
-
 .logos{
-    
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin-top: 20px;
     gap: 20px;
-    
 }
 .logos img{
     margin-bottom: 10px;
-    height: 75px;
-    width: 75px;
+    height: auto;
+    width: 10%;
 }
 
-/* Contatos */
+/*------------------- Pagina Contatos -------------------------- */
 .redes{
     display: flex;
     flex-direction: row;
@@ -143,24 +142,21 @@ main{
 }
 .redes img{
     margin-top: 15px;
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    height: auto;
 }
-
-.redes img:hover{
-    transition: 500ms;
-    height: 150px;
-    width: 150px;
-}
-
 .redes img:not(:hover){
     transition: 500ms;
-    height: 100px;
-    width: 100px;
+    height: auto;
+    width: 85%;
+}
+.redes img:hover{
+    transition: 500ms;
+    height: auto;
+    width: 100%;
 }
 
-
-/* Sobre */
+/*------------------- Pagina Sobre -------------------------- */
 .Separator{
     height: 5px;
     width: auto;
@@ -186,19 +182,16 @@ main{
     padding: 20px;
     border-radius: 5px;
 }
-
 .container-reverse .text-middle{
     text-align: center;
 }
-
 .container-picture{
     background-color: var(--Cor-Fundo-E-Contraste-Com-Titulo);
-    height: auto;
+    height: max-content;
     width: 20%;
     margin-right: 20px;
     border-radius: 0px 10px 0px 10px;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 .container-picture p{
     font-family: var(--Tipo-Texto-Paragrafo);
@@ -220,13 +213,10 @@ main{
     font-family: var(--Tipo-Texto-Paragrafo);
     font-size: 0.70rem;
 }
-
-
 .picture{
     display: flex;
     justify-content: center;
 }
-
 .container-picture img{
     border: 5px solid var(--Cor-Fundo) ;
     border-radius: 10px;
@@ -234,16 +224,26 @@ main{
     width: 90%;
 }
 
-.container-projects{
-    border-radius: 5px;
+/*------------------- Pagina Projetos -------------------------- */
+
+.container-reverse-servicos{
+    margin-top: 2px;
+    margin-bottom: 10px;
     background-color: var(--Cor-Fundo);
-    width: 90%;
-    height: 10%;
-    
+    color: var(--Cor-Fundo-E-Contraste-Com-Titulo);
+    padding: 20px;
+    border-radius: 5px;
 }
 
+.container-main h2{
+    font-family: var(--Tipo-Texto-Titulo);
+    margin-bottom: 5px;
+}
 
-
+.container-reverse-servicos a{
+    font-family: var(--Tipo-Texto-Paragrafo);
+    color: var(--Cor-Fundo-E-Contraste-Com-Titulo);
+}
 
 
 
