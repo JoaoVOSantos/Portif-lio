@@ -224,6 +224,20 @@ main{
     width: 90%;
 }
 
+.container-buttons{
+    
+    display: flex;
+    justify-content: center;
+}
+.button-cv{
+    margin-top: 10px;
+    background-color: var(--Cor-Fundo);
+    color: var(--Cor-Fundo-E-Contraste-Com-Titulo);
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /*------------------- Pagina Projetos -------------------------- */
 
 .container-reverse-servicos{
